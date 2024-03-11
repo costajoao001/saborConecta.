@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header, section, footer {
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+
+        #produto {
+            background-color: #3562df; /* Amarelo */
+            padding: -20px; /* Maior espaço na seção do produto */
+            margin-top: 20px;
+        }
+
+        #titulo-produto h1 {
+            color: #ffffff;
+            text-align: left;
+            margin-left: 9.5%;
+            margin-top: 180px;
+            font-size: 38px;
+        }
+
+        #titulo-produto p {
+            color: #ffffff;
+            font-size: 28px;
+            margin-top: 40px;
+            text-align: justify;
+            margin-left: 9.5%;
+            line-height: 1.4;
+
+        }
+
+        #titulo-produto {
+            padding-top: 0;
+        }
+
+        #produto img {
+            max-width: 40%;
+            height: auto;
+            margin-top: -580px;
+            margin-left: 750px;
+        }
+
+        #descricao-produto {
+            background-color: #ffffff; /* Amarelo mais claro */
+            padding: 20px;
+            margin-top: 0px;
+        }
+
+        #descricao-produto h1 {
+            text-align: left;
+            margin-left: 8.5%;
+            margin-top: 180px;
+            font-size: 38px;
+        }
+
+        #descricao-produto p {
+            font-size: 28px;
+            margin-top: 40px;
+            text-align: justify;
+            margin-left: 8.5%;
+            line-height: 1.4;
+
+
+        }
+
+        #descricao-produto img {
+            max-width: 50%;
+            height: auto;
+            margin-top: -650px;
+            margin-left: 790px;
+        }
+
+
+        #equipe {
+            background-color: #3562df; /* Verde */
+            text-align: center;
+            padding: 20px;
+        }
+
+        #equipe h2 {
+            color: #ffffff;
+            padding: 10px;
+        }
+
+
+        .membros-equipe {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .membro-equipe {
+            color: #ffffff;
+            margin: 0 10px;
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .membro-equipe img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        #informacoes{
+            display: flex;
+        }
+
+        #informacoes > div {
+            margin-right: 20px;
+        }
+
+        #informaçoes p {
+            font-size: 28px;
+            margin-top: 80px;
+            text-align: justify;
+            margin-left: 0;
+            line-height: 1.4;
+        }
+
+        #meuFormulario {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 0px;
+            max-width: 400px;
+            margin-left: 440px;
+        }
+
+        #meuFormulario h2 {
+            color: #000000;
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3562df;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+
+        #mensagemEnvio {
+            margin-top: 15px;
+            color: #008000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        footer {
+            background-color: #3562df;
+            color: rgb(255, 255, 255);
+            margin-right: -18px;
+            margin-left: -18px;
+        }
+
+    </style>
+    <title>SaborConecta</title>
+</head>
+<body>
+
+    <header>
+        <h1>SaborConecta</h1>
+        <p>Descubra o Sabor Único da Comunidade Culinária</p>
+    </header>
+
+    <section id="produto">
+        <div id="titulo-produto">
+            <h1>EXPLORANDO SABORES UNICOS:</h1>
+            <p>Explore um mundo de sabores com nossa plataforma <br> de compartilhamento
+                gastronômico. Desde receitas <br> autênticas a jantares temáticos, conecte-se<br>
+                com amantes da culinária como você
+                <p>Navegue por uma variedade de receitas, <br> classificadas por nível de dificudade <br> e tipo de cozinha.</p>
+            </div>
+            <img id="imagem1" src="comida png.png" alt="colecao1">
+            <h2></h2>
+        </div>
+    </section>
+    
+    <section id="descrição">
+        <div id="descricao-produto">
+            <h1>VIVA A CULINÁRIA: DESCUBRA, <BR> CONECTE-SE E INSPIRE-SE <BR> COM NOSSA PLATAFORMA EXCLUSIVA.</h1>
+            <p>Conecte-se com outros entusiastas da culinária, <br> compartilhe dicas e histórias, e faça amizades <br> que começam na cozinha.</p>
+            <p>Receba inspiração culinária personalizada, <br> adaptando aos seus gostos e preferências, direto na <br> sua caixa de entrada, para elevar <br> sua experiencia na cozinha a cada dia.</p>
+            <img id="imagem2" src="comida 2.png" alt="colecao2">
+        </div>
+
+    </section>
+
+    <section id="equipe">
+        <h2>COCHEÇA NOSSA EQUIPE</h2>
+        <div class="membros-equipe">
+            <div class="membro-equipe">
+                <img src="perfil.png" alt="Funcionário 1">
+                <h3>ISABELA SILVA</h3>
+                <p>SOMMELIER DE ESPECIARIAS</p>
+            </div>
+            <div class="membro-equipe">
+                <img src="foto-redonda.png" alt="Funcionário 2">
+                <h3>RICARDO GOMES</h3>
+                <p>CHEF DE CONFEITARIA CRIATIVA</p>
+            </div>
+            <div class="membro-equipe">
+                <img src="foto_redonda.png" alt="Funcionário 3">
+                <h3>FERNANDA SANTOS</h3>
+                <p>ESPECIALISTA EM CULINÁRIA INTERNACIONAL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="informaçoes" style="display: flex;">
+        <div>
+        <P id="textoInformativo" style="margin-left: 178px;">Junte-se à nossa comunidade apaixonada por <br> culinária e descubra um novo <br> mundo de sabores irresistíveis!</P>
+        <p id="outroParagrafo" style="margin: 20px; margin-left: 178px;">Prepare-se para explorar, compartilhar e <br> inspira-se em experiencias unicas <br> te aguardamos!</p>
+        </div>
+        <form id="meuFormulario">
+            <h2>MAIS INFORMAÇÕES:</h2>
+            <div class="form-group">
+                <label for="nome">NOME:</label>
+                <input type="text" id="nome" name="nome required">
+             </div>
+             <div class="form-group">
+                <label for="email">E-MAIL:</label>
+                <input type="email" id="email" name="email required">
+             </div>
+             <div class="form-group">
+                <label for="cidade">CIDADE:</label>
+                <input type="text" id="cidade" name="cidade required">
+             </div>
+             <div class="form-group">
+                <label for="estado">ESTADO:</label>
+                <input type="text" id="estado" name="estado required">
+             </div>
+
+             <button type="button" onclick="enviarformulario()">ENVIAR</button>
+
+             <div id="mensagemEnvio"></div>
+            </form>
+            <div id="mensagemEnvio"></div>
+        </section>
+        
+        <script>
+            function enviarformulario() {
+                var mensagemEnvio = document.getElementById('mensagemEnvio');
+                mensagemEnvio.innerHTML = 'SUCESSO!';
+
+                document.getElementById('nome').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('cidade').value = '';
+                document.getElementById('estado').value = '';
+
+
+                mensagemEnvio.style.opacity = '1';
+
+                setTimeout(function() {
+                    mensagemEnvio.style.opacity = '0';
+                }, 2000);
+            }
+        </script>
+        
+
+<footer>
+    <p>&copy; 2024 SaborConecta. Todos os direitos reservados.</p>
+</footer>
+
+
+</body>
+</html>
